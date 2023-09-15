@@ -2,6 +2,12 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 img {
   width: 100px;
   height: 100px;
@@ -10,6 +16,23 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px; /* add distance from items */
+}
+
+.container {  /*container for page body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+}
+.plant {  /*container for each plant */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -23,4 +46,8 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/* borders to understand containers better *{
+  border: 1px red solid;
 }
