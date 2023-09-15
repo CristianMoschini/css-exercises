@@ -8,6 +8,13 @@ body {
   font-family: Besley, serif;
 }
 
+div { /*add padding and align all divs */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
@@ -22,11 +29,13 @@ body {
   height: 48px;
 }
 
-.logo {
+.logo { /* Make logo container to align to center*/
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  display: flex;
+  align-items: center;
 }
 
 button {
@@ -43,6 +52,19 @@ a {
   color: rebeccapurple;
 }
 
-ul {
+ul { /* make list into container. Used for left side of menu */ 
+  display: flex;
+  padding: 16px;
+  gap: 16px;
   list-style-type: none;
 }
+
+#right {   /*Container for right side of menu */
+  display:flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* *{
+  border: 1px red solid;
+} */
