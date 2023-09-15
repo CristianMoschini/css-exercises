@@ -1,19 +1,30 @@
+
+
 .header  {
+  display: flex;
   font-family: monospace;
   background: papayawhip;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
+  display: flex; /*applies flex properties to LOGO as well*/
   font-size: 48px;
   font-weight: 900;
   color: tomato;
   background: white;
   padding: 4px 32px;
+  align-items: center; /*centers vertically*/
 }
 
 ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+  display: flex; /*applies flex properties to LOGO as well*/
+  margin: 0;
+  padding: 10px; /*external distance between li*/
+  gap: 10px ; /*internal distance between li */
+  
+  list-style-type: none; /* this removes the dots on the list items*/
 }
 
 a {
@@ -22,4 +33,11 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+
+/* Used borders to identify containers and items */ 
+/* 
+*{
+  border: 1px red solid;
 }
